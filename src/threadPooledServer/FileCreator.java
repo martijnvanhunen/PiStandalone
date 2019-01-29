@@ -1,14 +1,17 @@
 package threadPooledServer;
 
-import resources.ExecutorServices;
 import resources.Settings;
+import resources.ExecutorServices;
 
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-
+/**
+ * Created by Lenovo T420 on 17-1-2018.
+ * writes a file for a socket
+ */
 class FileCreator {
     static long runtime = 0;
 

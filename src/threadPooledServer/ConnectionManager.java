@@ -1,13 +1,13 @@
 package threadPooledServer;
 
 import resources.ExecutorServices;
+import java.util.*;
+import java.util.concurrent.*;
 
-import java.util.Collections;
-import java.util.HashSet;
-import java.util.Set;
-import java.util.concurrent.TimeUnit;
-
-
+/**
+ * Created by Lenovo T420 on 17-1-2018.
+ * holds all open connections, schedules receiving and writing of data
+ */
 class ConnectionManager {
     private final Set connections = Collections.synchronizedSet(new HashSet());
 

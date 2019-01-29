@@ -3,14 +3,9 @@ package threadPooledServer;
 import java.util.ArrayList;
 import java.util.List;
 
-
 /**
- * Deze class zorgt voor de namen van de gegenereerde folder/files
- * De 1e folder heeft het stationsnaam
- * de 2e folder de datum
- * de files hebben de uren, minuten, seconden
+ * Created by Lenovo T420 on 17-1-2018.
  */
-
 class MessageContainer {
     private int station;
     private String msgDate;

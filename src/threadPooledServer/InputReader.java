@@ -1,7 +1,7 @@
 package threadPooledServer;
 
-import resources.ExecutorServices;
 import resources.Settings;
+import resources.ExecutorServices;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -9,7 +9,9 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.ScheduledFuture;
 
-
+/**
+ * Created by Lenovo T420 on 17-1-2018.
+ */
 public class InputReader implements Runnable {
     private BufferedReader bufferedReader = null;
     private Map<Integer, MessageContainer> messages = new HashMap<>();
@@ -129,43 +131,43 @@ public class InputReader implements Runnable {
             case 4:
                 inputLine = inputLine.substring(6);
                 stringBuffer = inputLine.substring(0, inputLine.length() - 7);
-                while(stringBuffer.length()<5)stringBuffer+=" TEMP ";
+                while(stringBuffer.length()<5)stringBuffer+=" ";
                 break;
             case 5:
                 activeStationObj.setNewmssg(false);
                 inputLine = inputLine.substring(6);
                 stringBuffer = inputLine.substring(0, inputLine.length() - 7);
-                while(stringBuffer.length()<5){stringBuffer+=" DEWP ";}
+                while(stringBuffer.length()<5){stringBuffer+=" ";}
                 break;
             case 6: case 7:
                 inputLine = inputLine.substring(5);
                 stringBuffer = inputLine.substring(0, inputLine.length() - 6);
-                while(stringBuffer.length()<6){stringBuffer+=" STP/SLP ";}
+                while(stringBuffer.length()<6){stringBuffer+=" ";}
                 break;
             case 8:
                 inputLine = inputLine.substring(7);
                 stringBuffer = inputLine.substring(0, inputLine.length() - 8);
-                while(stringBuffer.length()<5){stringBuffer+=" VISIB ";}
+                while(stringBuffer.length()<5){stringBuffer+=" ";}
                 break;
             case 9:case 10:case 11:
                 inputLine = inputLine.substring(6);
                 stringBuffer = inputLine.substring(0, inputLine.length() - 7);
-                while(stringBuffer.length()<5){stringBuffer+=" WDSP/PRCP/SNDP ";}
+                while(stringBuffer.length()<5){stringBuffer+=" ";}
                 break;
             case 12:
                 inputLine = inputLine.substring(8);
                 stringBuffer = inputLine.substring(0, inputLine.length() - 9);
-                while(stringBuffer.length()<6){stringBuffer+=" FRSHTT ";}
+                while(stringBuffer.length()<6){stringBuffer+=" ";}
                 break;
             case 13:
                 inputLine = inputLine.substring(6);
                 stringBuffer = inputLine.substring(0, inputLine.length() - 7);
-                while(stringBuffer.length()<4){stringBuffer+=" CLDC ";}
+                while(stringBuffer.length()<4){stringBuffer+=" ";}
                 break;
             case 14:
                 inputLine = inputLine.substring(8);
                 stringBuffer = inputLine.substring(0, inputLine.length() - 9);
-                while(stringBuffer.length()<3){stringBuffer+=" WNDDIR ";}
+                while(stringBuffer.length()<3){stringBuffer+=" ";}
                 break;
         }
         if (doWrite) {

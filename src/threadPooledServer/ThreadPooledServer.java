@@ -1,11 +1,11 @@
 package threadPooledServer;
 
-import resources.ExecutorServices;
 import resources.Settings;
+import resources.ExecutorServices;
 
-import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.io.IOException;
 import java.util.concurrent.ScheduledFuture;
 import java.util.concurrent.TimeUnit;
 
@@ -13,7 +13,6 @@ import java.util.concurrent.TimeUnit;
  * manages server socket
  * accepts incoming connections
  * initializes the connection manager
- * ofterwel, De huidige server.
  */
 public class ThreadPooledServer implements Runnable{
 

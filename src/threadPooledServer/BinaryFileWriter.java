@@ -2,12 +2,16 @@ package threadPooledServer;
 
 import java.io.BufferedOutputStream;
 import java.io.IOException;
+import java.io.InterruptedIOException;
+import java.math.BigInteger;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.List;
 
-
+/**
+ * Created by Lenovo T420 on 19-1-2018.
+ */
 public class BinaryFileWriter implements Runnable{
     private final Integer messages;
     private List<String> content;

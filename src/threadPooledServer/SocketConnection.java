@@ -6,7 +6,8 @@ import java.io.InputStreamReader;
 import java.net.Socket;
 
 /**
- * initiates the inputstream which the data comes from.
+ * Created by Lenovo T420 on 17-1-2018.
+ * socket, bufferedReader pairi
  */
 class SocketConnection {
     BufferedReader bufferedReader = null;

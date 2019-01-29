@@ -1,7 +1,12 @@
 package threadPooledServer;
 
+import resources.ExecutorServices;
+
+import java.util.concurrent.TimeUnit;
+
 /**
- * Maakt een nieuwe multithreaded server aan.
+ * Created by Lenovo T420 on 16-1-2018.
+ * runs the main server
  */
 public class ThreadPooledServerRunner {
     public static ThreadPooledServer  server = new ThreadPooledServer();
